@@ -1,0 +1,35 @@
+﻿<Window x:Class="GameTetris.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameTetris"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Menu" Height="600" Width="800">
+    <Grid>
+
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/menu_wallpaper.png"/>
+        </Grid.Background>
+
+        <StackPanel HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+            <Button Content="Правила"
+                        Background="LightGreen"
+                        Padding="5" 
+                        Click="btn_RulesClick" Height="118" Width="313" FontSize="72"/>
+            <Button Content="Играть"
+                        Background="LightGreen"
+                        Padding="5" 
+                        Click="btn_PlayClick" Height="102" Width="311" FontSize="72"/>
+            <Button Content="Рекорды"
+                Background="LightGreen"
+                Padding="5" 
+                Click="btn_RecordsClick" Height="118" Width="313" FontSize="72"/>
+        </StackPanel>
+        <Button Content="Выход" HorizontalAlignment="Left" Margin="628,22,0,0" VerticalAlignment="Top" Height="74" Width="138" FontSize="36" FontWeight="Bold" Background="#FFD62073" Click="btn_ExitClick"/>
+
+
+    </Grid>
+</Window>

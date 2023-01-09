@@ -1,0 +1,30 @@
+﻿<Window x:Class="GameTetris.PlayerName"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameTetris"
+        mc:Ignorable="d"
+        Title="PlayerName" WindowStartupLocation="CenterScreen"
+        Height="600" Width="800">
+    <Grid>
+
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/menu_wallpaper.png"/>
+        </Grid.Background>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <TextBox x:Name="MainTextBox"
+                     MinWidth="390" MinHeight="115"
+                     VerticalAlignment="Center"
+                     FontSize="80"
+                     Margin="90" Width="570"/>
+            <Button Content="Играть" x:Name="btnStart"
+                            Background="LightGreen"                    
+                            Padding="5" 
+                            Click="btn_StartClick" FontSize="72" MinWidth="250" MinHeight="115" Width="300"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

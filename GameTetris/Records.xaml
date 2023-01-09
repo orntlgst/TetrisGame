@@ -1,0 +1,48 @@
+﻿<Window x:Class="GameTetris.Records"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameTetris"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Records" Height="700" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/menu_wallpaper.png"/>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"></RowDefinition>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="600"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock x:Name="Player1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="360" Height="63" Margin="230,0,0,0" Foreground="White" Background="{x:Null}" FontSize="48" Grid.Row="1"/>
+        <TextBlock x:Name="Player2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="360" Height="63" Margin="230,0,0,0" Foreground="White" Background="{x:Null}" FontSize="48" Grid.Row="2"/>
+        <TextBlock x:Name="Player3" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="360" Height="63" Margin="230,0,0,0" Foreground="White" Background="{x:Null}" FontSize="48" Grid.Row="3"/>
+        <TextBlock x:Name="Player4" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="360" Height="63" Margin="230,0,0,0" Foreground="White" Background="{x:Null}" FontSize="48" Grid.Row="4"/>
+        <TextBlock x:Name="Player5" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="360" Height="63" Margin="230,0,0,0" Foreground="White" Background="{x:Null}" FontSize="48" Grid.Row="5"/>
+        <TextBlock x:Name="Player6" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="360" Height="63" Margin="230,0,0,0" Foreground="White" Background="{x:Null}" FontSize="48" Grid.Row="6"/>
+        <TextBlock x:Name="Player7" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="360" Height="63" Margin="230,58,0,0" Foreground="White" Background="{x:Null}" FontSize="48" Grid.RowSpan="3" Grid.Row="6"/>
+        <TextBlock x:Name="Player8" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="360" Height="63" Margin="230,54,0,0" Foreground="White" Background="{x:Null}" FontSize="48" Grid.RowSpan="2" Grid.Row="7"/>
+        <TextBlock x:Name="Player9" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="360" Height="63" Margin="230,58,0,0" Foreground="White" Background="{x:Null}" FontSize="48" Grid.RowSpan="3" Grid.Row="8"/>
+        <TextBlock x:Name="Player10" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="360" Height="63" Margin="230,54,0,0" Foreground="White" Background="{x:Null}" FontSize="48" Grid.RowSpan="2" Grid.Row="9"/>
+        <Button x:Name="Quit_Records" Content="Выйти" HorizontalAlignment="Left" Height="42" Margin="263,0,0,0" Grid.Row="11" VerticalAlignment="Center" Width="266" Background="#FFD03394" FontWeight="Bold" FontSize="30" Click="btn_QuitRecordsClick"/>
+
+
+
+    </Grid>
+</Window>
